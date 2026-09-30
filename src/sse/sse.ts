@@ -160,7 +160,7 @@ class ServerSentEventHandler<
     /**
      * @note Cancel the response stream because it's not needed for logging.
      * Otherwise, this cloned response remains unconsumed and its original
-     * doesn't propagate stream cancelations at all.
+     * doesn't propagate stream cancellations at all.
      */
     args.response.body?.cancel()
 

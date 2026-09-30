@@ -1,5 +1,5 @@
 /**
- * Checks if the Service Worker API is supproted and available
+ * Checks if the Service Worker API is supported and available
  * in the current browsing context.
  */
 export function supportsServiceWorker(): boolean {

@@ -31,7 +31,7 @@ export function observeResponseBodyStream(
    * @note Relay the body through a manual underlying source instead of
    * `.pipeThrough(new TransformStream({ flush, cancel }))`. The `cancel`
    * transformer callback is not implemented in Chromium, which loses
-   * the stream error/cancelation signals there entirely.
+   * the stream error/cancellation signals there entirely.
    */
   const observedStream = new ReadableStream<Uint8Array>({
     async pull(controller) {

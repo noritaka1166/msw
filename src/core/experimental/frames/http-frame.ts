@@ -219,7 +219,7 @@ export abstract class HttpNetworkFrame extends NetworkFrame<
 
       /**
        * @note The unhandled frame handle must be executed during the request resolution
-       * since it can influence it (e.g. error the request if the "error" startegy was used).
+       * since it can influence it (e.g. error the request if the "error" strategy was used).
        */
       await executeUnhandledFrameHandle(this, onUnhandledFrame).then(
         () => this.passthrough(),
